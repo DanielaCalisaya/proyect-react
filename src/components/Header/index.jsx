@@ -1,7 +1,10 @@
 import React from 'react'
+import styles from './index.module.css'
 
-export const index = () => {
+export const Header = () => {
   return (
-    <div>index</div>
+    <header className={`py-5 ${styles.header}`}>
+      <h1>Search Drinks</h1>
+    </header>
   )
 }
