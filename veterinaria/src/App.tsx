@@ -1,22 +1,21 @@
-import { useState } from "react";
 import { Formulario } from "./components/formulario";
 import { Header } from "./components/header";
 import { ListadoPacientes } from "./components/listado-pacientes";
-import { FormValues } from "./components/formulario";
+import { PacientesProvider } from "./context/PacientesProvider";
 
 function App() {
 
-  const [pacientes, setPacientes] = useState<FormValues[]>([])
-
   return (
+    <PacientesProvider>
       <div className="container mx-auto mt-10">
-        <Header/>
+        <Header />
         <div className="mt-12 p-3 md:flex">
-          <Formulario setPacientes={setPacientes}/>
-          <ListadoPacientes pacientes={pacientes}/>
+          <Formulario />
+          <ListadoPacientes />
         </div>
       </div>
+    </PacientesProvider>
   )
 }
 
-export default App
+export default App;
