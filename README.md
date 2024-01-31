@@ -1,4 +1,6 @@
-# React - refuerzo
+# ***Veterinaria*** Registro de mascotas 
+
+### Proyecto React refuerzo
 
 npm install -D typescript
 
