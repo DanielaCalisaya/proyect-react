@@ -1,4 +1,4 @@
-import { Paciente } from "./formulario";
+import { Paciente } from "../context/PacientesContext";
 
 export const PacienteCard = ({
 
@@ -28,5 +28,5 @@ export const PacienteCard = ({
         Email: <span className="font-normal normal-case">{email}</span>
       </p>
     </div>
-  );
+  )
 };
